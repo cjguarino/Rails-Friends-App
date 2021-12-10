@@ -1,0 +1,25 @@
+
+<div class="card" style="background-color:rgb(225,225,300)">
+  <div class="card-header">
+    <h1 style="background-color:rgb(100,100,100); text-align:center; color: rgb(300,300,300)">ABOUT US</h1>
+  </div>
+  <div class="card-body">
+    <p>At the Friends App, we believe in a sustainable environment for future generations. Achieving the goal of reducing carbon emissions and greenhouse gases through renewable energy will have the greatest impact on our planet and natural resources.
+    <br/><br/>
+    We believe in the Energy Goals set forth by government leaders and counties around the world to have the effect on a cleaner, brighter future. Some of our major goals are to assist companies and home owners by educating them on embracing the effort to be energy efficient and benefit from the economic advantages of renewable energies.
+    <br/><br/>
+    Many technologies are advancing in more efficient ways to conserve energy.  At The Friends App, we provide full Engineering Procurement and Construction (EPC) for our customers and businesses. Us and our affiliates create state of the art technologies in order to create unique designs tailored to every clients needs.
+    <br/><br/>
+    Accelerating Deployment of Renewable Energy and Distributed Energy Resources by developing offshore wind, community solar, solar thermal, EV transportation and energy storage will be key factors in achieving goals for 2050.
+    <br/><br/>
+    At The Friends App, pride ourselves in our ability to deliver these designs, all while providing a quick turnaround time. These goals set forth by our company enables our clients to ensure sustainable energy for every business worldwide.</p>
+    <div class="text-center">
+
+    <%= if user_signed_in?
+    link_to 'Sign Up Now!', friends_path, class:"btn btn-outline-primary btn-lg"
+    else
+    link_to 'Sign Up Now!', new_user_registration_path, class:"btn btn-outline-primary btn-lg"
+    end %>
+    </div>
+  </div>
+</div>

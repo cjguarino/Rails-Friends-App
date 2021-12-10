@@ -1,0 +1,12 @@
+<div class="card" style="background-color:rgb(235,235,255)">
+  <div class="card-header">
+    <h1>New Help Blog Post</h1>
+  </div>
+  <div class="card-body">
+    <h4>Post your questions here for one of our site members to answer!</h4>
+    <%= render 'form', button_name: 'Send', contact: @contact %>
+
+    <%= link_to 'Clear', new_contact_path %>
+
+  </div>
+</div>
